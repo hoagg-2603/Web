@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Petology</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="" alt="">
+            <span>
+              Pet Family
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Dịch vụ </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pet.html">Thú cưng</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="buy.html">
+                    Giỏ Hàng 
+                    <span class="badge badge-danger cart-counter">0</span>
+                  </a>
+                </li>
+                <li class="nav-item d-lg-none"> <!-- Chỉ hiển thị trên mobile -->
+                  <a class="nav-link" href="account.html">
+                    <svg viewBox="0 0 24 24" width="20" height="20">
+                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    Đăng nhập
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="account.html" class="d-none d-lg-flex align-items-center ml-lg-3">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+              <span class="ml-2">Đăng nhập</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    
+    <section class="buy_section layout_padding">
+      <div class="container">
+        <div class="cart-container" id="cartContainer">
+          <!-- Nội dung giỏ hàng sẽ được tải động -->
+          <div class="empty-cart text-center py-5">
+            <div class="alert alert-info">
+              <h4 class="alert-heading">Giỏ hàng trống!</h4>
+              <a href="pet.html" class="btn btn-primary mt-3">
+                <i class="fas fa-paw mr-2"></i>Mua sắm ngay
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_items">
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Ha Noi, Viet Nam
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-2">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                +84 1234567890
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Lắng nghe sự kiện cập nhật giỏ hàng từ các trang khác
+        window.addEventListener('storage', function() {
+            cart = JSON.parse(localStorage.getItem('cart')) || [];
+            renderCart();
+        });
+
+        // Khởi tạo giỏ hàng khi trang tải
+        renderCart();
+
+        // Hàm render giỏ hàng
+        function renderCart() {
+            const container = document.getElementById('cartContainer');
+            container.innerHTML = '';
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-cart text-center py-5">
+                        <div class="alert alert-info">
+                            <h4 class="alert-heading">Giỏ hàng trống!</h4>
+                            <a href="pet.html" class="btn btn-primary mt-3">
+                                <i class="fas fa-paw mr-2"></i>Mua sắm ngay
+                            </a>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            // Render danh sách sản phẩm
+            let html = `
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        ${cart.map(item => `
+                            <div class="cart-item card mb-4" data-id="${item.id}">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="${item.image}" class="img-fluid rounded-start" alt="${item.name}">
+                                    </div>
+                                    <div class="col-md-8 position-relative">
+                                        <div class="card-body h-100 d-flex flex-column">
+                                            <h5 class="card-title mb-3">${item.name}</h5>
+                                            <div class="mt-auto">
+                                                <p class="d-flex justify-content-between align-items-center">
+                                                    <span class="price-highlight">${formatCurrency(item.price)}</span>
+                                                    <div class="input-group quantity-control">
+                                                        <button class="btn btn-outline-secondary quantity-minus">-</button>
+                                                        <input type="number" class="form-control quantity-input" value="${item.quantity}" min="1">
+                                                        <button class="btn btn-outline-secondary quantity-plus">+</button>
+                                                    </div>
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                    <span class="text-muted">Thành tiền:</span>
+                                                    <span class="price-highlight">${formatCurrency(item.price * item.quantity)}</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-link text-danger remove-item">
+                                                <i class="fas fa-trash-alt"></i> Xóa
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <!-- Phần tổng thanh toán -->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="total-section card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-center mb-4">THANH TOÁN</h5>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <span>Tạm tính:</span>
+                                    <span class="price-highlight">${formatCurrency(calculateSubtotal())}</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <span>Phí vận chuyển:</span>
+                                    <span>Miễn phí</span>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between fw-bold fs-5 mb-4">
+                                    <span>Tổng cộng:</span>
+                                    <span class="text-primary">${formatCurrency(calculateTotal())}</span>
+                                </div>
+                                <button class="btn btn-primary btn-lg w-100" id="checkoutBtn">
+                                    <i class="fas fa-credit-card me-2"></i>THANH TOÁN NGAY
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            container.innerHTML = html;
+            addEventListeners();
+        }
+
+        // Tính tổng phụ
+        function calculateSubtotal() {
+            return cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        }
+
+        // Tính tổng cộng
+        function calculateTotal() {
+            return calculateSubtotal();
+        }
+
+        // Định dạng tiền tệ
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('vi-VN', { 
+                style: 'currency', 
+                currency: 'VND' 
+            }).format(amount);
+        }
+
+        // Xử lý sự kiện
+        function addEventListeners() {
+            // Giảm số lượng
+            document.querySelectorAll('.quantity-minus').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const itemElement = e.target.closest('.cart-item');
+                    const itemId = itemElement.dataset.id;
+                    const itemIndex = cart.findIndex(item => item.id === itemId);
+                    
+                    if (cart[itemIndex].quantity > 1) {
+                        cart[itemIndex].quantity--;
+                    } else {
+                        cart.splice(itemIndex, 1);
+                    }
+                    updateCartData();
+                });
+            });
+
+            // Tăng số lượng
+            document.querySelectorAll('.quantity-plus').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const itemElement = e.target.closest('.cart-item');
+                    const itemId = itemElement.dataset.id;
+                    const item = cart.find(item => item.id === itemId);
+                    item.quantity++;
+                    updateCartData();
+                });
+            });
+
+            // Xóa sản phẩm
+            document.querySelectorAll('.remove-item').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const itemElement = e.target.closest('.cart-item');
+                    const itemId = itemElement.dataset.id;
+                    cart = cart.filter(item => item.id !== itemId);
+                    updateCartData();
+                });
+            });
+        }
+
+        // Cập nhật dữ liệu giỏ hàng
+        function updateCartData() {
+            // Lưu vào localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+            
+            // Cập nhật cartCount
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            localStorage.setItem('cartCount', totalItems);
+            
+            // Kích hoạt sự kiện để đồng bộ các trang
+            window.dispatchEvent(new Event('storage'));
+            
+            // Render lại giỏ hàng
+            renderCart();
+        }
+    });
+</script>
+  <script>
+    // ---------- CẬP NHẬT GIỎ HÀNG ----------
+    function updateCartCounter() {
+      const count = localStorage.getItem('cartCount') || 0;
+      document.querySelectorAll('.cart-counter').forEach(counter => {
+        counter.textContent = count;
+      });
+    }
+
+    // Chạy khi trang tải
+    document.addEventListener('DOMContentLoaded', updateCartCounter);
+
+    // Lắng nghe sự kiện storage
+    window.addEventListener('storage', updateCartCounter);
+  </script>
+</body>
+</html>

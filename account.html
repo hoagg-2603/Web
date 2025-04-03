@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Pet Family - Tài khoản</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- Giữ nguyên navbar gốc -->
+    <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <img src="" alt="">
+              <span>
+                Pet Family
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">Dịch vụ </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pet.html">Thú cưng</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="buy.html">
+                      Giỏ Hàng 
+                      <span class="badge badge-danger cart-counter">0</span>
+                    </a>
+                  </li>
+                  <li class="nav-item d-lg-none"> <!-- Chỉ hiển thị trên mobile -->
+                    <a class="nav-link" href="account.html">
+                      <svg viewBox="0 0 24 24" width="20" height="20">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                      </svg>
+                      Đăng nhập
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="account.html" class="d-none d-lg-flex align-items-center ml-lg-3">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                <span class="ml-2">Đăng nhập</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+    <!-- Phần form đăng nhập/đăng ký -->
+    <section class="layout_padding">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+              <!-- Register Form -->
+              <div class="account-container card shadow-lg" id="register-container">
+                <div class="card-body">
+                  <h2 class="card-title text-center mb-4">ĐĂNG KÝ TÀI KHOẢN</h2>
+                  <form>
+                    <div class="form-group">
+                      <input type="text" 
+                             id="reg-username" 
+                             class="form-control form-control-lg" 
+                             placeholder="Tên đăng nhập"
+                             required>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" 
+                             id="reg-password" 
+                             class="form-control form-control-lg" 
+                             placeholder="Mật khẩu"
+                             required>
+                    </div>
+                    <button class="btn btn-primary btn-block btn-lg" 
+                            onclick="register()">Đăng ký ngay</button>
+                    <p class="text-center mt-4 mb-0">
+                      Đã có tài khoản? 
+                      <span class="toggle-form text-primary" 
+                            onclick="showLogin()">Đăng nhập tại đây</span>
+                    </p>
+                  </form>
+                </div>
+              </div>
+      
+              <!-- Login Form -->
+              <div class="account-container card shadow-lg" 
+                   id="login-container" 
+                   style="display: none;">
+                <div class="card-body">
+                  <h2 class="card-title text-center mb-4">ĐĂNG NHẬP HỆ THỐNG</h2>
+                  <form>
+                    <div class="form-group">
+                      <input type="text" 
+                             id="login-username" 
+                             class="form-control form-control-lg" 
+                             placeholder="Tên đăng nhập"
+                             required>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" 
+                             id="login-password" 
+                             class="form-control form-control-lg" 
+                             placeholder="Mật khẩu"
+                             required>
+                    </div>
+                    <button class="btn btn-primary btn-block btn-lg" 
+                            onclick="login()">Đăng nhập</button>
+                    <p class="text-center mt-4 mb-0">
+                      Chưa có tài khoản? 
+                      <span class="toggle-form text-primary" 
+                            onclick="showRegister()">Đăng ký tại đây</span>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    // Giữ nguyên script gốc
+    function showLogin() {
+      document.getElementById("register-container").style.display = "none";
+      document.getElementById("login-container").style.display = "block";
+    }
+
+    function showRegister() {
+      document.getElementById("register-container").style.display = "block";
+      document.getElementById("login-container").style.display = "none";
+    }
+
+    function register() {
+      const username = document.getElementById("reg-username").value.trim();
+      const password = document.getElementById("reg-password").value.trim();
+      
+      if (!username || !password) {
+        alert("Vui lòng điền đầy đủ thông tin!");
+        return;
+      }
+
+      if (localStorage.getItem(username)) {
+        alert("Tên đăng nhập đã tồn tại!");
+      } else {
+        localStorage.setItem(username, password);
+        alert("Đăng ký thành công!");
+        showLogin();
+      }
+    }
+
+    function login() {
+      const username = document.getElementById("login-username").value.trim();
+      const password = document.getElementById("login-password").value.trim();
+      const storedPassword = localStorage.getItem(username);
+
+      if (!username || !password) {
+        alert("Vui lòng điền đầy đủ thông tin!");
+        return;
+      }
+
+      if (storedPassword && storedPassword === password) {
+        alert("Đăng nhập thành công! Chào mừng " + username);
+        window.location.href = "index.html";
+      } else {
+        alert("Sai tên đăng nhập hoặc mật khẩu!");
+      }
+    }
+  </script>
+  <script>
+    // ---------- CẬP NHẬT GIỎ HÀNG ----------
+    function updateCartCounter() {
+      const count = localStorage.getItem('cartCount') || 0;
+      document.querySelectorAll('.cart-counter').forEach(counter => {
+        counter.textContent = count;
+      });
+    }
+  
+    // Chạy khi trang tải
+    document.addEventListener('DOMContentLoaded', updateCartCounter);
+    
+    // Lắng nghe sự kiện storage
+    window.addEventListener('storage', updateCartCounter);
+  </script>
+</body>
+</html>
